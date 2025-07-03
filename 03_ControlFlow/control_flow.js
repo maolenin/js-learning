@@ -4,6 +4,10 @@ let isLoggedIn = true;
 let userMessage;
 let userType = "subscriber";
 let userCategory;
+let isAuthenticated = true;
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+let employeeType = "enrroled-member";
+let isEligible;
 
 if (userRole === "admin") {
     accessLevel = "Full access granted";
@@ -37,6 +41,25 @@ switch (userType) {
         userCategory = "Unkwown";
 }
 
+switch (employeeType) {
+    case "employee":
+        isEligible = "Access granted";
+        break;
+    case "enrroled-member":
+        isEligible = "Access granted and one-on-one interaction with a dietician";
+        break;
+    case "subscriber":
+        isEligible = "Partial access to facilitate Dietary Services only";
+        break;
+    case "non-subscriber":
+        isEligible = "Sorry, you need to enroll or at least subscribe first to avail this facility";
+        break;
+    default:
+        isEligible = "You don't have access";
+}
+
 console.log("Access Level:", accessLevel);
 console.log("User Message:", userMessage);
-console.log("User Category", userCategory);
+console.log("User Category:", userCategory);
+console.log("Authentication Status:", authenticationStatus);
+console.log("Dietary Services:", isEligible);
