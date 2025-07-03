@@ -63,3 +63,4 @@ console.log("User Message:", userMessage);
 console.log("User Category:", userCategory);
 console.log("Authentication Status:", authenticationStatus);
 console.log("Dietary Services:", isEligible);
+
