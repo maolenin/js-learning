@@ -10,9 +10,12 @@ function performOperation() {
 
         // Perform the operation
         let result = multiply(num1, num2);
+        let add = addition(num1, num2);
+        let div = division(num1, num2);
 
         // Display the result
-        displayResult(result);
+        displayResult(result, add, div);
+
         } else {
         displayResult('Please enter valid numbers');
     }
@@ -20,15 +23,25 @@ function performOperation() {
 
 function multiply(a, b) {
     // Introduce a debugger statement to pause execution
-    debugger;
+//    debugger;
 
     // Multiply the numbers
     return a * b;
 }
 
-function displayResult(result) {
+function addition(a,b){
+//    debugger;
+    return a + b;
+}
+
+function division(a, b){
+    debugger;
+    return a / b;
+}
+
+function displayResult(result, add, div) {
     // Display the result in the paragraph element
     const resultElement = document.getElementById('result');
-    resultElement.textContent = `The result is: ${result}`;
+    resultElement.innerHTML = `The multiplication is: ${result} <br> The additon is : ${add} <br> The division is : ${div}`;
 }
 
