@@ -681,7 +681,7 @@ The onsubmit event in HTML occurs when a form is submitted, either by clicking a
 
 1. Without addEventListener
 
-```js
+```html
 // <button id="myButton" onclick="handleButtonClick()">Click me</button>
 <script>
   function handleButtonClick() {
@@ -692,7 +692,7 @@ The onsubmit event in HTML occurs when a form is submitted, either by clicking a
 
 2. With addEventListener
 
-```js
+```html
 // <button id="myButton">Click me</button>
 <script>
   // Get the button element
@@ -711,7 +711,7 @@ The onsubmit event in HTML occurs when a form is submitted, either by clicking a
 3. Mouse events
 
 3.1 Click event
-```js
+```html
 // <button id="clickButton">Click Me!</button>
 <script>
   document.getElementById('clickButton').addEventListener('click', function() {
@@ -722,7 +722,7 @@ The onsubmit event in HTML occurs when a form is submitted, either by clicking a
 
 3.2 Mouseover
 
-```js
+```html
 // <div id="moveArea" style="width: 200px; height: 200px; background-color: lightcoral;"></div>
 
 <script>
@@ -737,8 +737,8 @@ The onsubmit event in HTML occurs when a form is submitted, either by clicking a
 
 4. Keyboard events
 
-4.1 Keyup and Keydown
-```js
+**4.1 Keyup and Keydown**
+```html
 // input type="text" id="keyInput">
 <script>
   const keyInput = document.getElementById('keyInput');
@@ -756,7 +756,7 @@ The onsubmit event in HTML occurs when a form is submitted, either by clicking a
 
 4.2 Keypress
 
-```js
+```html
 // input type="text" id="pressInput">
 <script>
   const pressInput = document.getElementById('pressInput');
@@ -768,9 +768,9 @@ The onsubmit event in HTML occurs when a form is submitted, either by clicking a
 
 5. Submit events
 
-5.1 Submit event
+**5.1 Submit event**
 
-```js
+```html
 // form id="myForm">
   <input type="text" id="textInput">
   <input type="submit" value="Submit">
@@ -783,12 +783,12 @@ The onsubmit event in HTML occurs when a form is submitted, either by clicking a
 </script>
 ```
 
-5.2 Change event
+**5.2 Change event**
 Used when the value of an input element within the form changes. It applies to various form elements such as text inputs, checkboxes, radio buttons, and dropdowns. This event enables real-time validation, updates, or actions based on user input changes.
 
-5.3 Focus event
+**5.3 Focus event**
 
-```js
+```html
 // <input type="text" id="textInput" placeholder="Click here">
 <script>
   const textInput = document.getElementById('textInput');
@@ -805,7 +805,7 @@ Used when the value of an input element within the form changes. It applies to v
 6. Window events
 
 6.1 Load event
-```js
+```html
 // <script>
   <script>
   window.addEventListener('load', function() {
@@ -816,7 +816,7 @@ Used when the value of an input element within the form changes. It applies to v
 
 6.2 Resize event
 
-```js
+```html
 // <script>
   window.addEventListener('resize', function() {
     console.log('Window resized');
@@ -1700,7 +1700,7 @@ querySelectorAll is a method in JavaScript that selects multiple HTML elements w
 
 Here are examples of how to use querySelectorAll for class, ID, and tag selections with console.log and explanations of their syntax:
 
-1. Selecting by Class:
+#### 1. Selecting by Class:
 
 HMTL code
 ```html
@@ -1733,7 +1733,7 @@ Explanation:
 * ```console.log(elementsByClass);``` logs the selected elements to the console.
 * Output Explanation: The elementsByClass NodeList contains two <p> elements with the class "highlighted." The console.log statement displays the NodeList with these two elements.
 
-2. Selecting by ID:
+#### 2. Selecting by ID:
 HTML Code
 ```html
 <!DOCTYPE html>
@@ -1765,7 +1765,7 @@ Explanation:
 * ```console.log(elementByID);``` logs the selected element to the console.
 * Output Explanation: The elementByID NodeList contains the <p> element with the ID "my-paragraph." Even though it's a single element, it's still represented as a NodeList. The console.log statement displays the NodeList with this element.
 
-3. Selecting by Tag Name:
+#### 3. Selecting by Tag Name:
 HTML code
 ```html
 <!DOCTYPE html>
@@ -1797,7 +1797,7 @@ Explanation:
 * ```console.log(elementsByTag);``` logs the selected elements to the console.
 * Output Explanation: The elementsByTag NodeList contains all three <p> elements in the document. The console.log statement displays the NodeList with these three elements.
 
-#### ClassList
+### ClassList
 The classList property is a useful feature that allows you to manipulate classes on HTML elements easily. Let's dive into an overview of the classList property and its methods.
 
 #### The classList Property in JavaScript
@@ -1813,25 +1813,25 @@ const classes = element.classList;
 
 #### Common Methods of classList
 
-1. add(class1, class2, ...)
+1. ```add(class1, class2, ...)```
 
 This method adds one or more classes to the element.
 
 ```element.classList.add('newClass');```
 
-2. remove(class1, class2, ...)
+2. ```remove(class1, class2, ...)```
 
 Removes one or more classes from the element.
 
 ```element.classList.remove('oldClass');```
 
-3. toggle(class, force)
+3. ```toggle(class, force)```
 
 Toggles a class. If the class exists, it is removed; otherwise, it is added. If the second parameter is true, the class is added; if false, the class is removed.
 
 ```element.classList.toggle('active');```
 
-4. contains(class)
+4. ```contains(class)```
 
 Checks if a class is present on the element. Returns true if the class exists; otherwise, it is false.
 ```js
@@ -1840,25 +1840,25 @@ if (element.classList.contains('special')) {
 }
 ```
 
-5. replace(oldClass, newClass)
+5. ```replace(oldClass, newClass)```
 
 Replaces a class with another class.
 
 ```element.classList.replace('oldClass', 'newClass');```
 
-6. item(index)
+6. ```item(index)```
 
 Returns the class name at the specified index.
 
 ```const firstClass = element.classList.item(0);```
 
-7. toString()
+7. ```toString()```
 
 Returns a string representing the element's classes.
 
 ```const classString = element.classList.toString();```
 
-Example
+#### Example
 
 ```html
     <!DOCTYPE html>
