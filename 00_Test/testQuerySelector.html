@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>querySelector Example</title>
+</head>
+<body>
+    <p class="highlighted">This is a highlighted paragraph.</p>
+    <p id="my-paragraph">This is a paragraph with an ID.</p>
+    <div>This is a regular paragraph.</div>
+    <script>
+        const elementByClass = document.querySelector('.highlighted');
+        // Log the selected element to the console
+        console.log(elementByClass);
+        // Select the element with the ID "my-paragraph" using querySelector
+        const elementByID = document.querySelector('#my-paragraph');
+        // Log the selected element to the console
+        console.log(elementByID);
+        // Select the first <p> element using querySelector
+        const elementByTag = document.querySelector('div');
+        // Log the selected element to the console
+        console.log(elementByTag);
+    </script>
+</body>
+</html>
