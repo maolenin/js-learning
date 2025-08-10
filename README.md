@@ -6,7 +6,7 @@
 * [Arrays and Objects in JavaScript](#arrays-and-objects-in-javaScript)
 * [DOM Manipulation Methods](#dom-manipulation-methods)
 * [Working with DOM in JavaScript](#working-with-dom-in-javaScript)
-* [JavaScript Async](javaScript-async)
+* [JavaScript Async](javascript-async)
 
 ## Introduction to JavaScript Development
 
