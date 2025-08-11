@@ -2796,7 +2796,7 @@ axios({
 ### install axios	
 You can install axios using npm in the terminal after installing node.
 
-```linux
+```bash
 npm install axios
 ```
 
