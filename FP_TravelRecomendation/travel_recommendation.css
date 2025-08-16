@@ -1,0 +1,210 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Justifying top bar */
+
+.top-nav {
+    background-color: #2A3439;
+    padding: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;    
+}
+
+/* sizing the title text */
+
+.top-nav h1 {
+    font-size: 2rem;
+}
+
+.top-nav nav {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+    justify-content: center;
+}
+
+.top-nav nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.top-nav nav a {
+    text-decoration: none;
+    color: #FEFEFA;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;    
+}
+
+.search-form {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    border-radius: 23px;
+    padding: 10px;
+    width: 460px;
+    justify-content: center;    
+}
+
+.search-form input {
+    border: none;
+    color: #00A19A;
+    min-width: 230px;
+    padding: 8px 30px;
+}
+
+.search-form input::placeholder {
+    font-size: 16px;
+    color: #137570;    
+}
+
+.search-form button {
+    border: none;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: #137570;
+}
+
+/* Main body */
+
+.main-and-left-wrapper {
+    display: flex;
+    flex-grow: 1;
+    background-image: url("./images/main_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+}
+
+.left-nav {
+    width: 60px;
+    padding: 20x;
+    height: calc(100vh - 82px);
+    overflow-y: auto;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20x;
+    color: white;
+}
+
+.left-nav nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.left-nav nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+  
+.left-nav nav ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Basic CSS for the form elements */
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+}
+  
+.main h1 {
+    margin-bottom: 50px;
+    font-size: 80px;
+    padding: 30px;
+    width: 50%;
+}
+
+.main p {
+    font-size: 25px;
+    padding: 30px;
+    width: 50%;
+}
+
+div {
+    margin-bottom: 10px;
+}
+  
+label {
+    display: inline-block;
+    width: 100px;
+}
+  
+input[type="text"],
+input[type="number"],
+select {
+    width: 200px;
+    padding: 5px;
+}
+
+button {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Basic CSS for the report section */
+h2 {
+    margin-top: 30px;
+}
+  
+#report,#result {
+    padding: 10px;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+#result{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#result img{
+    width: 200px;
+    height: 100px;
+}
+
+.square-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    padding: 20px;
+}

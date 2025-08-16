@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta :setcharset="UTF-8">
+  <title>Travel recomentations!</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="top-nav">
+      <h1>Magic Travel</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html" id="home">Home </a></li>
+          <li><a href="./about-us.html" id="abaout-us">About us </a></li>
+          <li><a href="./contact-us.html" id="contact-us">Contact Us </a></li>
+        </ul>
+      </nav>
+      <form class="search-form">
+          <li><input type="text" id="search" placeholder="Enter a destination or keyword" ></li>
+          <li><button id="btnSearch">Search</button></li>
+          <li><button id="btnClear">Clear</button></li>
+        </form>
+    </header>
+    <div class="main-and-left-wrapper">
+      <aside class="left-nav"> 
+        <nav>
+          <div style="height: 200px; overflow-y: visible;">
+
+          </div>
+          <ul>
+            <li>
+              <a href="./twitter.html" class="sm-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                  <path d="M22.46 6c-.77.34-1.6.57-2.45.68.89-.53 1.5-1.37 1.8-2.37-.84.5-1.78.87-2.78 1.07-.79-.84-1.92-1.37-3.17-1.37-2.35 0-4.26 1.91-4.26 4.26 0 .33.04.66.12.97-3.55-.18-6.7-1.88-8.8-4.48-.37.64-.58 1.39-.58 2.19 0 1.48.75 2.79 1.89 3.56-.7-.02-1.36-.21-1.93-.53v.05c0 2.06 1.47 3.78 3.42 4.18-.36.1-.73.15-1.12.15-.27 0-.53-.03-.79-.08.54 1.7 2.11 2.94 3.97 2.97-1.46 1.14-3.3 1.82-5.3 1.82-.34 0-.68-.02-1.02-.06 1.9 1.22 4.16 1.93 6.58 1.93 7.9 0 12.24-6.55 12.24-12.23 0-.19-.01-.38-.01-.56.84-.6 1.56-1.35 2.14-2.22z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="./facebook.hmtl" class="sm-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.916c0-.815.259-1.542 1.542-1.542h2.458v-4h-3c-4.981 0-5 3.238-5 5.238v2.762z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="./instagram.html" class="sm-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.15-4.773-1.699-4.92-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.773 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.44-.645 1.44-1.44s-.645-1.44-1.44-1.44z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="./youtube.html" class="sm-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.235 0-2.327.158-3.839 2.179-4.005 4.589-.251 3.791-.25 9.444 0 13.235.166 2.41 1.678 4.431 4.005 4.589 3.605.245 11.632.246 15.235 0 2.327-.158 3.839-2.18 4.005-4.589.251-3.792.25-9.445 0-13.235-.166-2.409-1.678-4.43-4.005-4.588zm-11.715 10.536v-6.666l5.772 3.332-5.772 3.334z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <h1>EXPLORE DREAM DESTINATION</h1>
+        <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destinations that captivates the hearth an ignites a sense of wonder</p>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
