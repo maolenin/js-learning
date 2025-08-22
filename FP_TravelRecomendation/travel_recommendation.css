@@ -12,6 +12,16 @@
     min-height: 100vh;
 }
 
+button {
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: #137570;
+}
+
 /* Justifying top bar */
 
 .top-nav {
@@ -73,9 +83,8 @@
 
 .search-form input {
     border: none;
-    color: #00A19A;
     min-width: 230px;
-    padding: 8px 30px;
+    padding: 18px 40px;
 }
 
 .search-form input::placeholder {
@@ -83,41 +92,29 @@
     color: #137570;    
 }
 
-.search-form button {
-    border: none;
-    font-size: 14px;
-    padding: 8px 15px;
-    border-radius: 8px;
-    background-color: #137570;
-}
-
 /* Main body */
 
 .main-and-left-wrapper {
     display: flex;
     flex-grow: 1;
-    background-image: url("./images/main_background.jpg");
+    background-image: linear-gradient(to right, rgba(0, 161, 154, 0.2), transparent), 
+                      /* Layer 2: Your background image */
+                      url("./images/main_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;  
 }
 
 .left-nav {
-    width: 60px;
-    padding: 20x;
+    width: 110px;
+    padding: 10px;
     height: calc(100vh - 82px);
     overflow-y: auto;
 }
 
-.main-content {
-    flex-grow: 1;
-    padding: 20x;
-    color: white;
-}
-
 .left-nav nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
 }
   
 .left-nav nav ul li a {
@@ -135,20 +132,31 @@
 /* Basic CSS for the form elements */
 body {
     font-family: Arial, sans-serif;
-    /* margin: 20px; */
 }
-  
-.main h1 {
+
+.main-content {
+    flex-grow: 1;
+    padding:10px;
+    color: white;
+}
+.main-content h1 {
     margin-bottom: 50px;
+    font-weight: bold;
     font-size: 80px;
-    padding: 30px;
     width: 50%;
 }
 
-.main p {
+.main-content p {
     font-size: 25px;
-    padding: 30px;
+    margin-bottom: 50px;
     width: 50%;
+}
+
+.main-content button {
+    border: none;
+    font-size: 18px;
+    font-style: bold;
+    padding: 15px 35px;
 }
 
 div {
@@ -163,48 +171,18 @@ label {
 input[type="text"],
 input[type="number"],
 select {
-    width: 200px;
-    padding: 5px;
-}
-
-button {
-    padding: 7px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+       width: 200px;
+    padding: 0px;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-/* Basic CSS for the report section */
-h2 {
-    margin-top: 30px;
-}
-  
-#report,#result {
-    padding: 10px;
-    max-width: 400px;
-    word-wrap: break-word;
-}
-#result{
-    height: 400px;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-#result img{
-    width: 200px;
-    height: 100px;
-}
-
-.square-container {
-    width: 300px;
-    height: 300px;
-    border: 2px solid red;
-    padding: 20px;
+/* This media query will apply a different style for screens smaller than 768px */
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 40px; /* Reduces the font size on smaller screens */
+        width: 90%; /* Makes the h1 element take up more width */
+    }
 }
