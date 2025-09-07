@@ -22,6 +22,38 @@ button {
     background-color: #137570;
 }
 
+button:hover {
+  background-color: #0f5c58; /* color más oscuro para todos */
+}
+
+.p-small {
+    font-size: 25px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+/* Párrafo normal */
+.p-main {
+  font-size: 30px;
+  line-height: 1.1;
+  color: #fefefa;
+  max-width: 800px    
+}
+
+.p-medium {
+      margin: 0 0 10px;
+      font-size: 60px;
+      width: 200px;
+      font-weight: bold;
+    }
+
+/* Párrafo destacado */
+.p-large {
+  font-size: 100px; 
+  font-weight: bold;
+  color: #ffffff;  
+  width: 40%;
+}
 /* Justifying top bar */
 
 .top-nav {
@@ -75,10 +107,10 @@ button {
     display: flex;
     align-items: center;
     gap: 0px;
-    border-radius: 23px;
+    border-radius: 10px;
     padding: 10px;
-    width: 460px;
-    justify-content: center;    
+    width: 400px;
+    justify-content: center;
 }
 
 .search-form input {
@@ -90,6 +122,10 @@ button {
 .search-form input::placeholder {
     font-size: 16px;
     color: #137570;    
+}
+
+.btn-header {
+  margin-right: 10px;
 }
 
 /* Main body */
@@ -138,6 +174,11 @@ body {
     flex-grow: 1;
     padding:10px;
     color: white;
+    display: flex;              /* activa flexbox */
+    flex-direction: column;     /* apila verticalmente */
+    justify-content: center;    /* centra vertical */
+    align-items: left;        /* centra vertical*/
+    min-height: 100vh;          /* ocupa el alto de la ventana */
 }
 .main-content h1 {
     margin-bottom: 50px;
@@ -145,18 +186,19 @@ body {
     font-size: 80px;
     width: 50%;
 }
-
+/*
 .main-content p {
     font-size: 25px;
     margin-bottom: 50px;
     width: 50%;
 }
-
-.main-content button {
-    border: none;
-    font-size: 18px;
-    font-style: bold;
-    padding: 15px 35px;
+*/
+.btn-landing {
+  margin-top: 30px;
+  font-size: 20px;
+  width: 160px;
+  height: 45px;
+  font-weight: bold;
 }
 
 div {
@@ -175,8 +217,126 @@ select {
     padding: 0px;
 }
 
-button:hover {
-    background-color: #45a049;
+/* About us*/
+
+.team-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+/*
+.team-container h2 {
+      margin: 0 0 10px;
+      font-size: 60px;
+      width: 200px;
+      font-weight: bold;
+    }
+*/
+.team-box {
+      /* border: 1px solid #ccc;*/
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: left;
+      box-shadow: 0 2px 5px rgba(12, 12, 12, 0.1);
+      background-color: #33333373;
+    }
+
+    .team-box h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .team-box p {
+      margin: 5px 0;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .role {
+      display: inline-block;
+      padding: 4px 18px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      background-color: #273168;
+      color: #fff;
+      font-size: 0.9em;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;      
+    }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: no-repeat center;
+  background-size: contain;
+  display: inline-block;
+
+  /* Icono embebido en formato data URI */
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4 c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4 c0-3.2-6.4-4.8-9.6-4.8z"/></svg>');
+}
+
+/* contact us */
+
+.contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      
+      margin: auto;
+      padding: 20px;
+    }
+
+.intro {
+  flex: 1;  /* primera columna */
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+  /*  padding: 12px;    */
+    flex-direction: column;
+    gap: 12px;    
+    font-size: 20px;    
+    max-width: 800px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: transparent;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Ajustar altura del textarea 5x input */
+.contact-form textarea {
+  height: calc(5 * 40px);  /* si tu input tiene 40px de altura */
+  resize: vertical;        /* opcional */
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
 }
 
 /* This media query will apply a different style for screens smaller than 768px */
