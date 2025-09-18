@@ -17,10 +17,10 @@
         </ul>
       </nav>
       <form class="search-form">
-          <input type="text" id="search" placeholder="Enter a destination or keyword">
-          <button id="btnSearch" class="btn-header">Search</button>
-          <button id="btnClear" calss="btn-header">Clear</button>
-        </form>
+        <input type="text" id="search" placeholder="Enter a destination or keyword">        
+        <button id="btnSearch" class="btn-header">Search</button>
+        <button id="btnClear" class="btn-header">Clear</button>
+      </form>
     </header>
     <div class="main-and-left-wrapper">
       <aside class="left-nav"> 
@@ -60,11 +60,15 @@
         </nav>
       </aside>
       <main class="main-content">
-        <p class="p-large">EXPLORE DREAM DESTINATION</h1>
-        <p class="p-main">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destinations that captivates the hearth an ignites a sense of wonder</p>
-        <button class="btn-landing">BOOK NOW</button>
+        <div>
+          <p class="p-large">EXPLORE DREAM DESTINATION</h1>
+          <p class="p-main">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destinations that captivates the hearth an ignites a sense of wonder</p>
+          <button class="btn-landing">BOOK NOW</button>
+        </div>
+        <div id="result"></div>
       </main>
     </div>
   </div>
+  <script src="./travel_recommendation.js"></script>
 </body>
 </html>

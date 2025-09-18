@@ -54,6 +54,8 @@ button:hover {
   color: #ffffff;  
   width: 40%;
 }
+
+
 /* Justifying top bar */
 
 .top-nav {
@@ -62,7 +64,8 @@ button:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: white;    
+    color: white;
+    height: 78px;
 }
 
 /* sizing the title text */
@@ -103,20 +106,33 @@ button:hover {
 }
 
 .search-form {
-    background-color: white;
+  border: none;
+  min-width: 400px;    
+  padding: 6px 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  height: auto;
+  outline: none;
+  background-color: white;
     display: flex;
     align-items: center;
     gap: 0px;
     border-radius: 10px;
-    padding: 10px;
-    width: 400px;
-    justify-content: center;
+    padding: 10px;    
+    justify-content: flex-start;
 }
 
 .search-form input {
+    /*border: none;
+    min-width: 230px;    
+    height: fit-content;*/
+    flex: 1;               /* input takes remaining space */
     border: none;
-    min-width: 230px;
-    padding: 18px 40px;
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 6px;
+    outline: none;
 }
 
 .search-form input::placeholder {
