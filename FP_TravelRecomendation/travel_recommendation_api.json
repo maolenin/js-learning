@@ -27,7 +27,7 @@
           },
           {
             "name": "Kyoto, Japan",
-            "imageUrl": "./images/kyoto.jpg",
+            "imageUrl": "./images/Kyoto.jpg",
             "description": "Known for its historic temples, gardens, and traditional tea houses."
           }
         ]
@@ -59,7 +59,7 @@
       {
         "id": 2,
         "name": "Taj Mahal, India",
-        "imageUrl": "./images/taj-mahal.jpeg",
+        "imageUrl": "./images/taj-mahal.jpg",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
     ],
