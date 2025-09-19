@@ -49,23 +49,28 @@ function search_destination(event) {
                 item.cities.forEach( city => {
                     itemDiv.className = 'item-card'; // Add a class for styling
                     itemDiv.innerHTML = `
-                    <h3>${city.name}</h3>
-                    <img src="${city.imageUrl}">
-                    <p>${city.description}</p>
+                    <div class="destiny-card">
+                        <img src="${city.imageUrl}">
+                        <h3>${city.name}</h3>    
+                        <p>${city.description}</p>
+                        <button id="visit">visit</button>
+                    </div>
                     `;
                     resultDiv.appendChild(itemDiv);
                     });
                 });           
             }
             else {
-                console.log('You are here')
                 itemsToDisplay.forEach(item => {
                 const itemDiv = document.createElement('div');
                 itemDiv.className = 'item-card'; // Add a class for styling
                 itemDiv.innerHTML = `
-                    <h3>${item.name}</h3>
-                    <img src="${item.imageUrl}">
-                    <p>${item.description}</p>
+                    <div class="destiny-card">
+                        <img src="${item.imageUrl}">                    
+                        <h3>${item.name}</h3>         
+                        <p>${item.description}</p>
+                        <button id="visit">visit</button>
+                    </div>
                 `;
                 resultDiv.appendChild(itemDiv);
                 });
